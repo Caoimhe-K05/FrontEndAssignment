@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -9,9 +11,11 @@
 <ion-content [fullscreen]="true">
   <br>
   <ion-title>Your favourite colour: {{myStatus}}</ion-title>
-  <ion-button [routerLink]="['/status']">Favourite Colour</ion-button><!-- router button will send user to the status page-->
+  <br>
+  <!--<ion-button [routerLink]="['/status']">Favourite Colour</ion-button> router button will send user to the status page-->
   <br>
   <ul>
+    <li [routerLink]="['/status']">Favourite Colour!</li>
     <li [routerLink]="['/plugin']">Plugin Page!</li><!--router link sends user to my plugin page-->
     <li [routerLink]="['/movie']">Movie Page!</li>
   </ul>

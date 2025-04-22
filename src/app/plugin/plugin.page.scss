@@ -1,0 +1,93 @@
+/* Set full-page background and center content */
+ion-content {
+    --background: linear-gradient(to bottom, #38c1d3, #ffffff); /* Blue to white */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  /* Style for ion-title (inside toolbar) */
+  ion-title {
+  font-family: 'Chicle', cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: white;
+  }
+  
+  /* Style for <h2> and <h4> elements */
+  h2, h4 {
+    font-family: 'Chicle', cursive;
+    font-size: 2rem;
+    color: black;
+    margin: 1rem 0;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  /* Style for <p> elements displaying coordinates */
+  p {
+    font-size: 1.2rem;
+    color: black;
+    margin: 0.5rem 0;
+    font-family: 'Chicle', cursive;
+  }
+  
+  /* Optional: Focus style for ion-button */
+  ion-button:focus-visible {
+    outline: 2px dashed #ffffff;
+    outline-offset: 4px;
+  }
+  
+  /* Style for <ul> */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the list items */
+  }
+  
+  /* Style for <li> elements */
+  li {
+    font-family: 'Chicle', cursive;
+    font-size: 2rem;  /* Increase font size */
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;  /* Add padding around the text */
+    margin: 0.5rem 0;
+    background: transparent;
+    border-radius: 35px;  /* Round the edges of the text background */
+    border: 2px solid #ffffff; /* Add a border around the text */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 15px rgba(255, 110, 196, 0.4);
+    text-align: center;
+    outline: none; /* Remove the default focus outline */
+    background: linear-gradient(45deg, #2bbbdf, #9148e4); /* Gradient for text */
+    display: inline-block; /* Makes the background hug the text */
+  }
+  
+  /* Hover effect for <li> */
+  li:hover {
+    transform: scale(1.05) rotate(-1deg);
+    background: linear-gradient(45deg, #bb0a71, #9148e4);
+    box-shadow: 0 8px 25px rgba(255, 110, 196, 0.6);
+  }
+  
+  /* Optional: Focus style for <li> */
+  li:focus-visible {
+    outline: 2px dashed #ffffff;
+    outline-offset: 4px;
+  }
+  

@@ -1,0 +1,120 @@
+/* Import Chicle font */
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
+/* Set full-page background and center content */
+
+  /* Make sure ion-list doesn't stretch to full width */
+ion-list {
+width: 100%;
+max-width: 500px;
+display: flex;
+flex-direction: column;
+}
+
+/* Apply Chicle font to ion-title (inside toolbar) */
+ion-toolbar ion-title {
+  font-family: 'Chicle', cursive !important;
+  font-size: 2.5rem;
+  text-transform: none;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+/* Apply font to ion-items + labels */
+ion-item::part(native),
+ion-label {
+  font-family: 'Chicle', cursive !important;
+  text-transform: none !important;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Style each ion-item */
+ion-item {
+  margin: 0.8rem 0;
+  padding: 1rem;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  --background: transparent;
+}
+
+/* Hover effect */
+ion-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Backgrounds for each item */
+ion-item:nth-child(1) {
+  background: #f44336; /* Red */
+}
+ion-item:nth-child(2) {
+  background: #ff9800; /* Orange */
+}
+ion-item:nth-child(3) {
+  background: #ffeb3b; /* Yellow */
+  color: black;
+}
+ion-item:nth-child(4) {
+  background: #4caf50; /* Green */
+}
+ion-item:nth-child(5) {
+  background: #2196f3; /* Blue */
+}
+ion-item:nth-child(6) {
+  background: #9c27b0; /* Purple */
+}
+ion-item:nth-child(7) {
+  background: #e91e63; /* Pink */
+}
+
+/* Radio colors */
+ion-radio {
+  --color-checked: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the list items */
+  }
+  
+  /* Style for <li> elements */
+  li {
+    font-family: 'Chicle', cursive;
+    font-size: 2rem;  /* Increase font size */
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;  /* Add padding around the text */
+    margin: 0.5rem 0;
+    background: transparent;
+    border-radius: 35px;  /* Round the edges of the text background */
+    border: 2px solid #ffffff; /* Add a border around the text */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 15px rgba(255, 110, 196, 0.4);
+    text-align: center;
+    outline: none; /* Remove the default focus outline */
+    background: linear-gradient(45deg, #2bbbdf, #9148e4); /* Gradient for text */
+    display: inline-block; /* Makes the background hug the text */
+  }
+  
+  /* Hover effect for <li> */
+  li:hover {
+    transform: scale(1.05) rotate(-1deg);
+    background: linear-gradient(45deg, #bb0a71, #9148e4);
+    box-shadow: 0 8px 25px rgba(255, 110, 196, 0.6);
+  }
+  
+  /* Optional: Focus style for <li> */
+  li:focus-visible {
+    outline: 2px dashed #ffffff;
+    outline-offset: 4px;
+  }

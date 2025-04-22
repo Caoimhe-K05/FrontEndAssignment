@@ -1,0 +1,50 @@
+/* Set full-page background and center content */
+ion-content {
+    --background: linear-gradient(to bottom, #38c1d3, #ffffff); /* Blue to white */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  /* Style for ion-title */
+  ion-title {
+  font-family: 'Chicle', cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+
+  }
+  /* Style for <ul> */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the list items */
+  }
+
+  ion-content {
+    animation: wave 5s ease-in-out infinite;
+    background: linear-gradient(45deg, #ff4081, #ff80ab);
+    background-size: 200% 200%;
+  }
+
+  ion-card{
+    font-family: 'Chicle', cursive;
+    font-size: 3rem;
+    background-color: transparent;
+    border-radius: 35px;
+    border-color: black;
+    border: 4px solid #000000;
+  }
+  
+  
