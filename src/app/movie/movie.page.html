@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Movie Page!</ion-title>
+    <ion-title>Movie Page!</ion-title><!--title-->
   </ion-toolbar>
 </ion-header>
 
@@ -15,11 +15,12 @@
     </li>
   </ul>> -->
   
+  <!--loops through movie array-->
   <ion-card *ngFor="let movie of movies">
-    <img src="{{movie.Poster}}">
+    <img src="{{movie.Poster}}"><!--display movie poster-->
     <ion-card-header>
-    <ion-card-subtitle>{{movie.Title}}</ion-card-subtitle>
-    <ion-card-title>{{movie.Year}}</ion-card-title>
+    <ion-card-subtitle>{{movie.Title}}</ion-card-subtitle><!--display movie title-->
+    <ion-card-title>{{movie.Year}}</ion-card-title><!--display movie year-->
     </ion-card-header>
     </ion-card>
   </ion-content>

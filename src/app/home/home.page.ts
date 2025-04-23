@@ -15,9 +15,9 @@ export class HomePage {
   constructor(private storage:Storage) {}
 
   async ionViewWillEnter(){
-    console.log("ionviewWillEnter");
-    await this.storage.create();
-    this.myStatus = await this.storage.get('status');
+    console.log("ionviewWillEnter");//confirming method execution
+    await this.storage.create();//initialise the storage engine
+    this.myStatus = await this.storage.get('status');//retreive stored value
   }
 }
 

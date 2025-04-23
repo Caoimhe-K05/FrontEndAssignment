@@ -1,9 +1,4 @@
-/* Import Chicle font */
 @import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
-
-/* Set full-page background and center content */
-
-  /* Make sure ion-list doesn't stretch to full width */
 ion-list {
 width: 100%;
 max-width: 500px;
@@ -11,7 +6,7 @@ display: flex;
 flex-direction: column;
 }
 
-/* Apply Chicle font to ion-title (inside toolbar) */
+//applying font to title
 ion-toolbar ion-title {
   font-family: 'Chicle', cursive !important;
   font-size: 2.5rem;
@@ -21,7 +16,7 @@ ion-toolbar ion-title {
   width: 100%;
 }
 
-/* Apply font to ion-items + labels */
+//applying the font
 ion-item::part(native),
 ion-label {
   font-family: 'Chicle', cursive !important;
@@ -30,7 +25,7 @@ ion-label {
   color: white;
 }
 
-/* Style each ion-item */
+//style for each item
 ion-item {
   margin: 0.8rem 0;
   padding: 1rem;
@@ -41,37 +36,36 @@ ion-item {
   --background: transparent;
 }
 
-/* Hover effect */
+//hover affect
 ion-item:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 }
 
-/* Backgrounds for each item */
+//background colour for each item
 ion-item:nth-child(1) {
-  background: #f44336; /* Red */
+  background: #f44336;
 }
 ion-item:nth-child(2) {
-  background: #ff9800; /* Orange */
+  background: #ff9800;
 }
 ion-item:nth-child(3) {
-  background: #ffeb3b; /* Yellow */
-  color: black;
+  background: #ffeb3b;
 }
 ion-item:nth-child(4) {
-  background: #4caf50; /* Green */
+  background: #4caf50; 
 }
 ion-item:nth-child(5) {
-  background: #2196f3; /* Blue */
+  background: #2196f3;
 }
 ion-item:nth-child(6) {
-  background: #9c27b0; /* Purple */
+  background: #9c27b0; 
 }
 ion-item:nth-child(7) {
-  background: #e91e63; /* Pink */
+  background: #e91e63;
 }
 
-/* Radio colors */
+//radio button colour
 ion-radio {
   --color-checked: white;
 }
@@ -82,39 +76,33 @@ ul {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the list items */
+    align-items: center; 
   }
   
-  /* Style for <li> elements */
+  //style for save button
   li {
     font-family: 'Chicle', cursive;
-    font-size: 2rem;  /* Increase font size */
+    font-size: 2rem; 
     color: #ffffff;
-    padding: 0.75rem 1.5rem;  /* Add padding around the text */
+    padding: 0.75rem 1.5rem;  
     margin: 0.5rem 0;
     background: transparent;
-    border-radius: 35px;  /* Round the edges of the text background */
-    border: 2px solid #ffffff; /* Add a border around the text */
+    border-radius: 35px;  
+    border: 2px solid #ffffff; 
     transition: all 0.3s ease;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 0 6px 15px rgba(255, 110, 196, 0.4);
     text-align: center;
-    outline: none; /* Remove the default focus outline */
-    background: linear-gradient(45deg, #2bbbdf, #9148e4); /* Gradient for text */
-    display: inline-block; /* Makes the background hug the text */
+    outline: none; 
+    background: linear-gradient(45deg, #2bbbdf, #9148e4);
+    display: inline-block; 
   }
   
-  /* Hover effect for <li> */
+  //hocer affect
   li:hover {
     transform: scale(1.05) rotate(-1deg);
     background: linear-gradient(45deg, #bb0a71, #9148e4);
     box-shadow: 0 8px 25px rgba(255, 110, 196, 0.6);
-  }
-  
-  /* Optional: Focus style for <li> */
-  li:focus-visible {
-    outline: 2px dashed #ffffff;
-    outline-offset: 4px;
   }

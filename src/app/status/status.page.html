@@ -2,17 +2,17 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
-      <ion-title>Set Status</ion-title>
+      <ion-title>Set Status</ion-title><!--title-->
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ul>
+<ul><!--wrapped in ul for styling-->
   <ion-list>
-    <ion-radio-group [(ngModel)]="status">
+    <ion-radio-group [(ngModel)]="status"><!--radio group with two way data binding-->
       <ion-item>
-        <ion-label>Red</ion-label>
-        <ion-radio slot="end" value="Red"></ion-radio>
+        <ion-label>Red</ion-label><!--label dispalying colour-->
+        <ion-radio slot="end" value="Red"></ion-radio><!--the button is at the end and it saves the value-->
       </ion-item>
       <ion-item>
         <ion-label>Orange</ion-label>
@@ -43,7 +43,8 @@
   </ion-list>
 </ul>
   <!--<ion-button (click)="onButtonClick()">SAVE</ion-button>-->
+  <!--replaces all buttons as styling wouldnt work the way i wanted it to-->
   <ul>
-    <li (click)="onButtonClick()">Save</li>
+    <li (click)="onButtonClick()">Save</li><!--calls the on button click method-->
   </ul>
 

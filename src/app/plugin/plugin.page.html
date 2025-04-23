@@ -4,7 +4,7 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
 
-    <ion-title>Plugin Page!</ion-title>
+    <ion-title>Plugin Page!</ion-title><!--title-->
   </ion-toolbar>
 </ion-header>
 
@@ -12,15 +12,13 @@
   <h2>In this page I will have a Native/Capacitor Plugin</h2>
   <br>
   <h2>Go to Genshin Impact Character Page!</h2>
-  <!--<ion-button (click)="openBrowser()">Characters Page</ion-button>button will send the user to the genshin character website-->
   <ul>
-    <li (click)="openBrowser()">Characters Page</li>
+    <li (click)="openBrowser()">Characters Page</li><!--sends user to browser-->
   </ul>
   <br>
   <h2>Get Location</h2>
-  <!--<ion-button (click)="getLocation()">Get Location</ion-button>this calls the getlocation method-->
   <ul>
-    <li (click)="getLocation()">Get Location</li>
+    <li (click)="getLocation()">Get Location</li><!--gets users current location-->
   </ul>
   <h4>This is your location in Coordinates:</h4><!--prints outs user details using data binding-->
   <p>Latitude: {{lat}}</p><!--prints the latitude-->

@@ -10,14 +10,14 @@
 
 <ion-content [fullscreen]="true">
   <br>
-  <ion-title>Your favourite colour: {{myStatus}}</ion-title>
+  <ion-title>Your favourite colour: {{myStatus}}</ion-title><!--data binding - gets users favourite colour and displays-->
   <br>
   <!--<ion-button [routerLink]="['/status']">Favourite Colour</ion-button> router button will send user to the status page-->
   <br>
   <ul>
-    <li [routerLink]="['/status']">Favourite Colour!</li>
+    <li [routerLink]="['/status']">Favourite Colour!</li><!--router link sends user to status page to set favourite colour-->
     <li [routerLink]="['/plugin']">Plugin Page!</li><!--router link sends user to my plugin page-->
-    <li [routerLink]="['/movie']">Movie Page!</li>
+    <li [routerLink]="['/movie']">Movie Page!</li><!--sends user to movie api page-->
   </ul>
 </ion-content>
 
