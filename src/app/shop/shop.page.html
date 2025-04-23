@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Shop</ion-title><!--title-->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-grid>
+    <ion-col size="6" *ngFor="let item of products"><!--displays each product-->
+      <ion-card (click)="toggleSelection(item)" [class.selected]="isSelected(item)">
+        <img [src]="item.image" alt="item image"><!--displayes image-->
+        <ion-card-header>
+          <ion-card-title>{{ item.name }}</ion-card-title><!--displayes name-->
+          <ion-card-subtitle>${{ item.price }}</ion-card-subtitle><!--displayes price-->
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+  </ion-grid>
+
+  <ul>
+    <li (click)="checkout()">Checkout ({{ selectedItems.length }})</li><!--calls checkout method-->
+  </ul>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><!--checkout gets cutoff so i added breaks-->
+</ion-content>

@@ -22,4 +22,8 @@ export const routes: Routes = [
     path: 'movie',
     loadComponent: () => import('./movie/movie.page').then( m => m.MoviePage)
   },
+  {
+    path: 'shop',
+    loadComponent: () => import('./shop/shop.page').then( m => m.ShopPage)
+  },
 ];

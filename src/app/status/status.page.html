@@ -7,6 +7,9 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content>
+
+
 <ul><!--wrapped in ul for styling-->
   <ion-list>
     <ion-radio-group [(ngModel)]="status"><!--radio group with two way data binding-->
@@ -47,4 +50,6 @@
   <ul>
     <li (click)="onButtonClick()">Save</li><!--calls the on button click method-->
   </ul>
+
+  </ion-content>
 

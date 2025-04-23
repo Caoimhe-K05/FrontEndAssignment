@@ -1,3 +1,16 @@
+//styling for main page content
+ion-content {
+  --background: linear-gradient(to bottom, #38c1d3, #ffffff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
 ion-list {
 width: 100%;
