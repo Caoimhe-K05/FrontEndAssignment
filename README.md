@@ -1,6 +1,6 @@
 # Title ~ Front End Assignment App
 # Author ~ Caoimhe-K05
-# Features
+# User Guide
 ~ Home Page ~ This page acts as a the core navigaton center for my app, as there are RouterLinks present on this page to each other page present in this app.
 ~ Status Page ~ This page allows the user to select their favourite colour using radio buttons. Once favourite colour is selected, the user will press the 'Save' button which will save their selected item to storage and redirect the user back to the home page, where their selected colour is displayed.
 ~ Plugin Page ~ This page features two different plugis, The browser plugin which redirects the user to the 'Genshin Impact' official website. The Geolocation plugin, once clicked, will get the users current location and display it on the plugin page in coordiante form.
